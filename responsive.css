@@ -1,4 +1,3 @@
-
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
 
@@ -27,7 +26,6 @@
         display: none;
     }
 
-    /* optional: hide search icon on mobile if you want */
     .search_icon {
         display: none;
     }
@@ -83,7 +81,6 @@
 
     .login_signup_container {
         display: none;
-        /* optional: hide on mobile */
     }
 
     /* Submenus on mobile */
