@@ -119,21 +119,21 @@ li {
 .sub_Menu_all a,
 .sub_Menu_all a:hover {
     padding: 1rem 0.75rem;
-    color: #007ab7 !important;
-    font-weight: bold !important;
-    background: none !important;
-    transform: none !important;
-    transition: none !important;
-    text-decoration: none !important;
+    color: #007ab7 ;
+    font-weight: bold ;
+    background: none ;
+    transform: none ;
+    transition: none ;
+    text-decoration: none ;
 }
 
 .sub_Menu_all a:hover {
-    color: #0068A8 !important;
-    font-weight: bold !important;
-    background: none !important;
-    transform: none !important;
-    transition: color 0.2s !important;
-    text-decoration: none !important;
+    color: #0068A8 ;
+    font-weight: bold ;
+    background: none ;
+    transform: none ;
+    transition: color 0.2s;
+    text-decoration: none ;
 }
 
 .nav-links>li>a:after {
@@ -151,18 +151,18 @@ li {
 }
 
 .nav-links>li:hover>a:after {
-    border-color: #fff!important;
+    border-color: #fff;
 }
 
 .nav-links>li>a.active:after{
-  border-color: #4d148c !important;
+  border-color: #4d148c ;
     
 }
 
 .nav-links a.active,
 .nav-links>li.active>a {
-    color: #4d148c !important;
-    background: #fff !important;
+    color: #4d148c ;
+    background: #fff ;
     text-decoration: underline;
     padding: 24px 10px;
 }
@@ -385,8 +385,8 @@ li {
 
 .ruls_content a span {
 
-    font-weight: 700 !important;
-    color: #007ab7 !important;
+    font-weight: 700 ;
+    color: #007ab7 ;
     text-transform: uppercase;
     letter-spacing: 1px;
 }

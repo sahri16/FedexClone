@@ -27,7 +27,37 @@
     height: 25px;
     object-fit: contain;
 }
-
+/* Style for search input in nav */
+.search-item {
+    display: none; /* hide by default on desktop */
+   
+  }
+  
+  .search-item input {
+    background: transparent;
+    width: 75%;
+    padding: 0.5rem;
+    border: none;
+    font-size: 0.9rem;
+  }
+  .search-item input::placeholder{
+    color: #fff;
+    font-style: italic;
+    font-size: 0.7rem;
+  }
+  
+  .search_icon_m {
+    padding: 0.5rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+    border-left: 1px solid #ccc;
+  }
+  
+  .search_icon_m img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
 
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
@@ -40,12 +70,17 @@
     .top_main,
     .top3,
     .bottom_footer {
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 0 10px !important;
+        width: 100% ;
+        margin: 0 ;
+        padding: 0 10px ;
         box-sizing: border-box;
     }
-
+    .search-item {
+        display: flex;
+        align-items: center;
+        background: #4D148C;
+      }
+    
     .mobile-icons {
         display: flex;
     }
@@ -62,8 +97,9 @@
     .nav-links-container {
         display: none;
         flex-direction: column;
+        align-items: flex-start;
         width: 100%;
-        background: #4D148C;
+        background: #fafafa;
         position: absolute;
         top: 100%;
         left: 0;
@@ -77,19 +113,29 @@
     .nav-links {
         flex-direction: column;
         gap: 0;
+        width: 100%;
+
     }
 
     .nav-links li {
         width: 100%;
+        border-top: 1px solid #ccc;
     }
 
     .nav-links a {
+        color: #333;
         display: block;
         width: 100%;
         padding: 1rem;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
-
+    .nav-links>li>a:after{
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+    }
+    .nav-links>li>a.active:after{
+        border-color: #fff;
+    }
     .hamburger {
         display: flex;
     }
@@ -104,17 +150,20 @@
         display: none;
         position: static;
         box-shadow: none;
-        background: #5a1e99;
+        background: #fafafa;
         border-radius: 0;
     }
 
     .nav-links li.open .sub-menu {
         display: block;
     }
-
+    .nav-links a.active{
+        color: #fff;
+        background-color: #4D148C;
+    }
     .banner {
-        height: 180px;
-        background-position: center;
+        background-position: 25% 10%;
+        height: 160px;
     }
 
     .hero_header {
@@ -126,19 +175,42 @@
         top: 40%;
     }
 
-    .cube-container {
-        margin-top: 40px;
+    .cube-container { 
+               margin-top: 100px;
         max-width: 100%;
-        flex-direction: column;
+    }
+    .cube__content{
+        height: 90px;
+        width: 90px;
         gap: 10px;
+        justify-content: center;
+    }
+    .cube__content i{
+        font-size: 30px;
+    }
+    .cube__content span{
+        font-size: 0.8rem;
+        font-weight:600 ;
+
+    }
+.active_cube{
+    height: 100px;
+    width: 100px;
+}
+    .hero-form {
+        width: 80%;
+        max-width: 100%;
+        gap: 1px;
+    }
+    .hero-form input{
+        padding: 10px 5px !important;
+    font-size: 0.7rem !important;
+    }
+    .hero-form a{
+        padding: 10px 10px;
+    font-size: 0.8rem;
     }
 
-    .hero-form {
-        width: 100%;
-        max-width: 100%;
-        flex-direction: column;
-        gap: 8px;
-    }
 
     .Main_Section {
         margin: 1rem 0.5rem;
@@ -151,6 +223,20 @@
         gap: 10px;
     }
 
+    .rules_section {
+        gap: 30px;
+        margin-top: 130px;
+    }
+    .ruls_content a {
+        gap:10;
+    }
+    .ruls_content a img {
+        width: 30%;
+    }
+    .ruls_content a span {
+        font-size: 10px;
+    }
+    
     .Artical_section1,
     .Artical_section2,
     .Artical_section4,
