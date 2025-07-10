@@ -504,8 +504,10 @@ text-align: center;
     flex-direction: column;
 }
 .card_content{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
+    flex: 1;
 }
 .card_content img {
     width: 100%;
@@ -537,4 +539,24 @@ sub{
     color: #007ab7 !important;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: auto;
+}
+
+/* Artical_section4 */
+
+.Artical_section4{
+    margin: 40px 0;
+    padding: 0;
+}
+.Artical_section4 .Artical_content{
+    padding-left: 40px;
+}
+.Artical_section4 .Artical_title{
+    font-size: 30px;
+    font-weight: 300;
+}
+.Artical_section4 .Artical_content_p{
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: -0.1;
 }
