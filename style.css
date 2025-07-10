@@ -541,6 +541,9 @@ sub{
     text-transform: uppercase;
     margin-top: auto;
 }
+.card_link:hover{
+    text-decoration: underline;
+}
 
 /* Artical_section4 */
 
@@ -586,7 +589,7 @@ sub{
     gap: 10px;
 }
 .card_text h5{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 300;
 }
 .card_text p{
