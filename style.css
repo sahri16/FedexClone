@@ -348,7 +348,6 @@ li {
 /* Main body */
 .Main_Section{
     margin: 3rem 12rem;
-    /* background-color:  #FAFAFA; */
 }
 
 /* Rules_container */
@@ -458,26 +457,43 @@ letter-spacing: 0.02rem;
 font-weight: 300;
 }
 .artical_grid2 span{
- font-size: 0.7rem;
+ font-size: 0.8rem;
 }
 .artical_grid2 a{
  color: #000;
 }
 
 .artical_btn {
-    margin: 50px 290px;
+    margin: 50px 280px;
     text-align: center;
 }
 .artical_btn a{
     border: 2px solid #ff6200;
-    padding: 16px 24px !important;
+    padding: 14px 24px ;
 text-decoration: none;
 color: #ff6200;
 font-weight: 700;
-font-size: 22px;
+font-size: 20px;
+letter-spacing: 0.02rem;
 text-align: center;
+text-transform: uppercase;
 }
 .artical_btn a:hover{
 border:  2px solid #E45528;
 color: #E45528;
+}
+.artical_btn:hover{
+    transition: .25s padding ease, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+transform: scale(1.04);
+}
+
+
+.Artical_section3 h1{
+font-size: 3rem;
+font-weight: 300;
+line-height: 1.2;
+text-align: center;
+}
+.section3{
+    display: flex;
 }
