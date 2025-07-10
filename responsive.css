@@ -217,7 +217,6 @@
     }
 
     .rules_section,
-    .artical_top,
     .section3 {
         flex-direction: column;
         gap: 10px;
@@ -238,19 +237,34 @@
     }
     
     .Artical_section1,
-    .Artical_section2,
     .Artical_section4,
     .Artical_section5,
     .Artical_section6 {
-        padding: 10px 5px;
+        padding: 10px 8px;
         margin: 10px 0;
+        flex-direction: column;
+        gap: 12px;
     }
-
+    .Artical_title {
+        font-size: 14px;
+    }
+    .Artical_content{
+        gap: 10px;
+    }
+    .Artical_content_p {
+        font-size: 12px;
+    }
+    .Artical_content_span {
+        font-size: 12px;
+    }
     .Artical_img,
     .Artical_content {
         width: 100%;
     }
-
+    
+    .artical_top{
+        flex-direction: column-reverse;
+    }
     .artical_grid {
         flex-direction: column;
         gap: 10px;
