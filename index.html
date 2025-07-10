@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fedex-home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href="https://db.onlinewebfonts.com/c/69843195082278a158540fee382a4dbf?family=BasicSans-Light"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -56,6 +57,19 @@
                         </ul>
                     </li>
                 </ul>
+            </div>
+
+            <div class="mobile-icons">
+                <div class="login_signup">
+                    <a href="#">
+                        <img src="./assest/1.png" alt="Profile">
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="login_signup_container">
@@ -352,10 +366,10 @@
                     <div class="custom-dropdown">
                         <div class="selected">English</div>
                         <div class="options">
-                          <div data-value="en">English</div>
-                          <div data-value="ur">Urdu</div>
+                            <div data-value="en">English</div>
+                            <div data-value="ur">Urdu</div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
             <div class="top3"></div>
@@ -411,7 +425,25 @@
             }
         });
 
+        // responscive
+        const hamburger = document.querySelector('.hamburger');
+        const navLinksContainer = document.querySelector('.nav-links-container');
 
+        hamburger.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('active');
+        });
+
+        // For submenus: toggle open/close on mobile
+        const navItems = document.querySelectorAll('.nav-links > li > a');
+        navItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const parentLi = item.parentElement;
+                    parentLi.classList.toggle('open');
+                }
+            });
+        });
 
         const dropdown = document.querySelector('.custom-dropdown');
         const selected = dropdown.querySelector('.selected');
