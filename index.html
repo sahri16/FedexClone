@@ -349,6 +349,13 @@
                         <i class="fa-solid fa-globe"></i>
                         <span>United States</span>
                     </div>
+                    <div class="custom-dropdown">
+                        <div class="selected">English</div>
+                        <div class="options">
+                          <div data-value="en">English</div>
+                          <div data-value="ur">Urdu</div>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="top3"></div>
@@ -403,6 +410,32 @@
                 });
             }
         });
+
+
+
+        const dropdown = document.querySelector('.custom-dropdown');
+        const selected = dropdown.querySelector('.selected');
+        const options = dropdown.querySelector('.options');
+        const optionItems = options.querySelectorAll('div');
+
+        selected.addEventListener('click', () => {
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Close dropdown if clicked outside
+        document.addEventListener('click', function (e) {
+            if (!dropdown.contains(e.target)) {
+                options.style.display = 'none';
+            }
+        });
+
+        optionItems.forEach(item => {
+            item.addEventListener('click', () => {
+                selected.textContent = item.textContent;
+                options.style.display = 'none';
+            });
+        });
+
     </script>
 </body>
 

@@ -707,7 +707,14 @@ padding: 50px 0;
 .top_1 ul li a:hover{
     text-decoration: underline;
 }
+
+.top2{
+    display: grid;
+    justify-items: start;
+    gap: 10px;
+}
 .top2 h5{
+    margin: 0;
     color: #4d148c;
     font-size: .75rem;
     font-weight: 700;
@@ -727,6 +734,59 @@ align-items: center;
 {
     font-size: 0.8rem;
 }
+
+.custom-dropdown {
+    position: relative;
+    display: grid;
+    align-items: center;
+    width: 190px;
+    padding: 10px 10px;
+    border: 1px solid rgba(89, 89, 91, 0.5);
+    cursor: pointer;
+    font-family: sans-serif;
+    user-select: none;
+  }
+  
+  .selected {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .custom-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border: solid black;
+    border-width: 0 1.5px 1.5px 0;
+    padding: 3px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: 1px solid #007ab7;
+    background: white;
+    z-index: 10;
+  }
+  
+  .options div {
+    padding: 10px;
+    font-size: 16px;
+    transition: background 0.2s;
+  }
+  
+  .options div:hover {
+    background: #f0f8ff;
+  }
+  
 .top3{
     margin: 3rem 12rem 0;
     border-bottom: 1px solid rgba(89, 89, 91, 0.5);
