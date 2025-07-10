@@ -1,86 +1,24 @@
-/* Hamburger icon */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 4px;
-    margin-left: auto;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: #fff;
-    display: block;
-    border-radius: 2px;
-}
-
-.mobile-icons {
-    display: none;
-    align-items: center;
-    gap: 1rem;
-    margin-left: auto;
-}
-
-.mobile-icons img {
-    width: 25px;
-    height: 25px;
-    object-fit: contain;
-}
-/* Style for search input in nav */
-.search-item {
-    display: none; /* hide by default on desktop */
-   
-  }
-  
-  .search-item input {
-    background: transparent;
-    width: 75%;
-    padding: 0.5rem;
-    border: none;
-    font-size: 0.9rem;
-  }
-  .search-item input::placeholder{
-    color: #fff;
-    font-style: italic;
-    font-size: 0.7rem;
-  }
-  
-  .search_icon_m {
-    padding: 0.5rem;
-    margin-left: 1.2rem;
-    cursor: pointer;
-    border-left: 1px solid #ccc;
-  }
-  
-  .search_icon_m img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-  }
 
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
-    body {
-        font-size: 15px;
-    }
 
     .navbar_links,
     .Main_Section,
     .top_main,
     .top3,
     .bottom_footer {
-        width: 100% ;
-        margin: 0 ;
-        padding: 0 10px ;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
         box-sizing: border-box;
     }
+
     .search-item {
         display: flex;
         align-items: center;
         background: #4D148C;
-      }
-    
+    }
+
     .mobile-icons {
         display: flex;
     }
@@ -129,13 +67,16 @@
         padding: 1rem;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .nav-links>li>a:after{
+
+    .nav-links>li>a:after {
         border-right: 1px solid #333;
         border-bottom: 1px solid #333;
     }
-    .nav-links>li>a.active:after{
+
+    .nav-links>li>a.active:after {
         border-color: #fff;
     }
+
     .hamburger {
         display: flex;
     }
@@ -157,10 +98,12 @@
     .nav-links li.open .sub-menu {
         display: block;
     }
-    .nav-links a.active{
+
+    .nav-links a.active {
         color: #fff;
         background-color: #4D148C;
     }
+
     .banner {
         background-position: 25% 10%;
         height: 160px;
@@ -175,40 +118,47 @@
         top: 40%;
     }
 
-    .cube-container { 
-               margin-top: 100px;
+    .cube-container {
+        margin-top: 100px;
         max-width: 100%;
     }
-    .cube__content{
+
+    .cube__content {
         height: 90px;
         width: 90px;
         gap: 10px;
         justify-content: center;
     }
-    .cube__content i{
+
+    .cube__content i {
         font-size: 30px;
     }
-    .cube__content span{
+
+    .cube__content span {
         font-size: 0.8rem;
-        font-weight:600 ;
+        font-weight: 600;
 
     }
-.active_cube{
-    height: 100px;
-    width: 100px;
-}
+
+    .active_cube {
+        height: 100px;
+        width: 100px;
+    }
+
     .hero-form {
         width: 80%;
         max-width: 100%;
         gap: 1px;
     }
-    .hero-form input{
+
+    .hero-form input {
         padding: 10px 5px !important;
-    font-size: 0.7rem !important;
+        font-size: 0.7rem !important;
     }
-    .hero-form a{
+
+    .hero-form a {
         padding: 10px 10px;
-    font-size: 0.8rem;
+        font-size: 0.8rem;
     }
 
 
@@ -226,18 +176,20 @@
         gap: 30px;
         margin-top: 130px;
     }
+
     .ruls_content a {
-        gap:10;
+        gap: 10;
     }
+
     .ruls_content a img {
         width: 30%;
     }
+
     .ruls_content a span {
         font-size: 10px;
     }
-    
+
     .Artical_section1,
-    .Artical_section4,
     .Artical_section5,
     .Artical_section6 {
         padding: 10px 8px;
@@ -245,42 +197,137 @@
         flex-direction: column;
         gap: 12px;
     }
+
     .Artical_title {
         font-size: 14px;
     }
-    .Artical_content{
+
+    .Artical_content {
         gap: 10px;
+        padding: 0 10px;
+
     }
+
     .Artical_content_p {
         font-size: 12px;
     }
+
     .Artical_content_span {
-        font-size: 12px;
+        font-size: 0.6rem;
+        letter-spacing: 0.03rem;
     }
+
     .Artical_img,
     .Artical_content {
         width: 100%;
     }
-    
-    .artical_top{
-        flex-direction: column-reverse;
+
+    .Artical_section2 {
+        padding: 10px 8px;
     }
+
+    .artical_top {
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+
+    .Artical_title2 {
+        font-size: 1.2rem;
+    }
+
+    .artical_grid2 span {
+        font-size: 0.6rem;
+    }
+
+    .artical_grid1 p {
+        font-size: 0.8rem;
+    }
+
+    .artical_grid1 span {
+        font-size: 0.7rem;
+    }
+
     .artical_grid {
         flex-direction: column;
         gap: 10px;
     }
 
     .artical_btn {
-        margin: 20px 0;
+        margin: 40px 0 20px;
+    }
+
+    .artical_btn a {
+        font-size: 12px;
+    }
+
+    .section3 {
+        gap: 30px;
     }
 
     .section3>div {
         min-width: 0;
     }
 
+    .Artical_section3 h1 {
+        font-size: 1.6rem;
+    }
+
+    .section5 .card_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section5 .card_content img {
+        width: 100%;
+    }
+
+    .section5 .card_content {
+        gap: 10px;
+    }
+
+
+    .Artical_section4 {
+        flex-direction: column-reverse;
+    }
+
+    .Artical_section4 .Artical_content {
+        padding-left: 0px;
+        padding: 10px 0px !important;
+    }
+
+    .Artical_section4 .Artical_title {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .Artical_section4 .Artical_content_p {
+        font-size: 0.7rem;
+    }
+
+    .card_content h5 {
+        font-size: 1rem;
+    }
+
+    .card_content p {
+        font-size: 0.8rem;
+    }
+
+    .card_link {
+        font-size: 0.6rem;
+        letter-spacing: 0.03rem;
+    }
+
     .card_content img {
         max-width: 100%;
         height: auto;
+    }
+
+    .fqa_home h6 {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .fqa_home p {
+        font-size: 0.6rem;
     }
 
     .top_footer,
@@ -300,11 +347,28 @@
     .top_1 {
         min-width: 0;
         width: 100%;
+        justify-content: start;
     }
-
+    .top_1 ul li a {
+        font-size: 0.6rem;
+    }
     .bottom_footer {
         flex-direction: column;
-        gap: 10px;
+        gap: 0;
         padding: 10px 5px;
+    }
+    .bottom_left span {
+        font-size: 0.6rem;
+
+    }
+    .bottom_right{
+        margin: 0;
+    }
+    .bottom_right ul {
+        gap: 5px;
+        padding: 0;
+    }
+    .bottom_footer a{
+        font-size: 0.6rem;
     }
 }

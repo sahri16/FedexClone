@@ -119,21 +119,21 @@ li {
 .sub_Menu_all a,
 .sub_Menu_all a:hover {
     padding: 1rem 0.75rem;
-    color: #007ab7 ;
-    font-weight: bold ;
-    background: none ;
-    transform: none ;
-    transition: none ;
-    text-decoration: none ;
+    color: #007ab7;
+    font-weight: bold;
+    background: none;
+    transform: none;
+    transition: none;
+    text-decoration: none;
 }
 
 .sub_Menu_all a:hover {
-    color: #0068A8 ;
-    font-weight: bold ;
-    background: none ;
-    transform: none ;
+    color: #0068A8;
+    font-weight: bold;
+    background: none;
+    transform: none;
     transition: color 0.2s;
-    text-decoration: none ;
+    text-decoration: none;
 }
 
 .nav-links>li>a:after {
@@ -154,15 +154,15 @@ li {
     border-color: #fff;
 }
 
-.nav-links>li>a.active:after{
-  border-color: #4d148c ;
-    
+.nav-links>li>a.active:after {
+    border-color: #4d148c;
+
 }
 
 .nav-links a.active,
 .nav-links>li.active>a {
-    color: #4d148c ;
-    background: #fff ;
+    color: #4d148c;
+    background: #fff;
     text-decoration: underline;
     padding: 24px 10px;
 }
@@ -177,6 +177,37 @@ li {
 
 }
 
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    margin-left: auto;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    border-radius: 2px;
+}
+
+.mobile-icons {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.mobile-icons img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* login or signup */
 .login_signup {
     display: flex;
     align-items: center;
@@ -220,6 +251,38 @@ li {
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
+}
+
+/* for mobile */
+.search-item {
+    display: none;
+}
+
+.search-item input {
+    background: transparent;
+    width: 75%;
+    padding: 0.5rem;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.search-item input::placeholder {
+    color: #fff;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+.search_icon_m {
+    padding: 0.5rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+    border-left: 1px solid #ccc;
+}
+
+.search_icon_m img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 /* Hero Section */
@@ -385,8 +448,8 @@ li {
 
 .ruls_content a span {
 
-    font-weight: 700 ;
-    color: #007ab7 ;
+    font-weight: 700;
+    color: #007ab7;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -434,6 +497,7 @@ li {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .Artical_content_span:hover {
@@ -655,10 +719,11 @@ sub {
     gap: 20px;
 }
 
-.fqa_home{
+.fqa_home {
     display: grid;
-gap: 10px;
+    gap: 10px;
 }
+
 .fqa_home h6 {
     margin: 0;
     font-size: 18px;
@@ -673,28 +738,32 @@ gap: 10px;
 }
 
 /* footer */
-footer{
+footer {
     margin: 60px 0 0 0;
 }
-.top_footer{
-    /* display: flex; */
+
+.top_footer {
     background-color: #FAFAFA;
-padding: 50px 0;
+    padding: 50px 0;
 }
-.top_main{
+
+.top_main {
     margin: 0rem 12rem 0;
     display: flex;
     justify-content: space-between;
 }
-.top1{
+
+.top1 {
     display: flex;
     gap: 70px;
 }
-.top_1{
+
+.top_1 {
     display: grid;
     justify-content: center;
 }
-.top_1 h5{
+
+.top_1 h5 {
     margin: 0;
     color: #4d148c;
     font-size: .75rem;
@@ -702,28 +771,33 @@ padding: 50px 0;
     letter-spacing: .85px;
     text-transform: uppercase;
 }
-.top_1 ul{
+
+.top_1 ul {
     padding: 0;
 }
-.top_1 ul li{
+
+.top_1 ul li {
     line-height: 1.6 !important;
     font-weight: 400;
     font-size: .85rem !important;
 }
-.top_1 ul li a{
+
+.top_1 ul li a {
     text-decoration: none;
     color: #333;
 }
-.top_1 ul li a:hover{
+
+.top_1 ul li a:hover {
     text-decoration: underline;
 }
 
-.top2{
+.top2 {
     display: grid;
     justify-items: start;
     gap: 10px;
 }
-.top2 h5{
+
+.top2 h5 {
     margin: 0;
     color: #4d148c;
     font-size: .75rem;
@@ -731,17 +805,19 @@ padding: 50px 0;
     letter-spacing: .85px;
     text-transform: uppercase;
 }
-.lang_fdx{
+
+.lang_fdx {
     gap: 5px;
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.lang_fdx i{
+
+.lang_fdx i {
     font-size: 20px;
 }
-.lang_fdx span
-{
+
+.lang_fdx span {
     font-size: 0.8rem;
 }
 
@@ -755,14 +831,14 @@ align-items: center;
     cursor: pointer;
     font-family: sans-serif;
     user-select: none;
-  }
-  
-  .selected {
+}
+
+.selected {
     padding: 8px;
     font-size: 16px;
-  }
-  
-  .custom-dropdown::after {
+}
+
+.custom-dropdown::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -773,9 +849,9 @@ align-items: center;
     border-width: 0 1.5px 1.5px 0;
     padding: 3px;
     transform: translateY(-50%) rotate(45deg);
-  }
-  
-  .options {
+}
+
+.options {
     display: none;
     position: absolute;
     top: 100%;
@@ -785,27 +861,28 @@ align-items: center;
     border-top: 1px solid #007ab7;
     background: white;
     z-index: 10;
-  }
-  
-  .options div {
+}
+
+.options div {
     padding: 10px;
     font-size: 16px;
     transition: background 0.2s;
-  }
-  
-  .options div:hover {
+}
+
+.options div:hover {
     background: #f0f8ff;
-  }
-  
-.top3{
+}
+
+.top3 {
     margin: 3rem 12rem 0;
     border-bottom: 1px solid rgba(89, 89, 91, 0.5);
 }
-.top3 ul{
+
+.top3 ul {
     margin: 0;
 }
 
-.bottom_footer{
+.bottom_footer {
     padding: 10px 12rem;
     background-color: #4D148C;
     color: #fff;
@@ -813,21 +890,24 @@ align-items: center;
     justify-content: space-between;
     align-items: center;
 }
-.bottom_footer a{
+
+.bottom_footer a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
 }
-.bottom_footer a:hover{
+
+.bottom_footer a:hover {
     text-decoration: underline;
 }
-.bottom_right ul{
-display: flex;
-gap: 20px;
-}
-.bottom_left span{
-    font-size: 1rem;
-    font-weight: 400; 
+
+.bottom_right ul {
+    display: flex;
+    gap: 20px;
 }
 
+.bottom_left span {
+    font-size: 1rem;
+    font-weight: 400;
+}
